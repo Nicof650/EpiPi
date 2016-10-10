@@ -1,0 +1,18 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EpiPi.Models.Pages.AboutPage
+
+<
+@{
+    Layout = "~/Views/Shared/_root.cshtml";
+}
+
+<div class="row">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>@Html.PropertyFor(x => x.Heading)</h1>
+            <p>@Html.PropertyFor(x => x.MainBody)</p>
+        </div>
+    </div>
+</div>
