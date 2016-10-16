@@ -1,0 +1,11 @@
+﻿@model EpiPi.Models.Blocks.ProjectBlock
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>@Html.PropertyFor(x => x.Header)</h1>
+        <p>
+            <img class="top-left img-responsive" src="@Model.Image" width="500" height="300" />
+            @Html.PropertyFor(x => x.Description)
+        </p>
+    </div>
+</div>

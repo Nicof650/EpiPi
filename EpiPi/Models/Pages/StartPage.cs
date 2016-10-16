@@ -8,10 +8,13 @@ using EPiServer.SpecializedProperties;
 namespace EpiPi.Models.Pages
 {
     [ContentType(DisplayName = "StartPage", GUID = "1892b21c-2dd4-4dcb-bbed-77bf4eaa0e4c", Description = "")]
-    public class StartPage : PageData
+    public class StartPage : BasePage
     {              
-        public virtual string Heading { get; set; }
-        public virtual XhtmlString MainBody { get; set; }
-         
+        [Display(
+            Name = "Block",
+            Description = "Add a block",
+            GroupName = SystemTabNames.Content,
+            Order = 3)]
+        public virtual ContentArea MainContentArea { get; set; }
     }
 }

@@ -12,7 +12,8 @@
     <div class="jumbotron">
         <div class="container">
             <h1>@Html.PropertyFor(x => x.Heading)</h1>
-            <p>@Html.PropertyFor(x => x.MainBody)</p>
+            <p><img class="top-left img-responsive" src="@Model.Image" width="700" height="500" /> </p>
+            <p> @Html.PropertyFor(x => x.MainBody)</p>
         </div>
     </div>
 </div>

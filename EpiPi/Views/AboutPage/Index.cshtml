@@ -13,6 +13,14 @@
         <div class="container">
             <h1>@Html.PropertyFor(x => x.Heading)</h1>
             <p>@Html.PropertyFor(x => x.MainBody)</p>
+            <p class="clearfix"><a class="btn btn-primary btn-lg " href="@Model.Url" role="button" target="_new">@Model.Button</a></p>
         </div>
     </div>
 </div>
+
+<!-- Block Content Area -->
+@if (Model.MainContentArea != null)
+{
+    <!-- block content goes here -->
+    @Html.PropertyFor(x => x.MainContentArea)
+}

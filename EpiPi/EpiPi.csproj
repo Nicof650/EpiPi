@@ -280,21 +280,27 @@
   <ItemGroup>
     <Compile Include="Business\BundleConfig.cs" />
     <Compile Include="Controllers\AboutPageController.cs" />
+    <Compile Include="Controllers\BasePageController.cs" />
+    <Compile Include="Controllers\JumbotronBlockController.cs" />
+    <Compile Include="Controllers\ProjectBlockController.cs" />
     <Compile Include="Controllers\RPiPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blocks\JumbotronBlock.cs" />
+    <Compile Include="Models\Blocks\ProjectBlock.cs" />
+    <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Pages\AboutPage.cs" />
+    <Compile Include="Models\Pages\BasePage.cs" />
     <Compile Include="Models\Pages\RPiPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Blocks\" />
-    <Folder Include="Models\Media\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Static\" />
+    <Folder Include="Views\BasePage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -342,6 +348,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\AboutPage\Index.cshtml" />
     <Content Include="Views\RPiPage\Index.cshtml" />
+    <Content Include="Views\JumbotronBlock\Index.cshtml" />
+    <Content Include="Views\ProjectBlock\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

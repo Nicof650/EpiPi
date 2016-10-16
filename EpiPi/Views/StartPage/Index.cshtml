@@ -16,3 +16,10 @@
         </div>
     </div>
 </div>
+
+<!-- Block Content Area -->
+@if (Model.MainContentArea != null)
+{
+    <!-- block content goes here -->
+    @Html.PropertyFor(x => x.MainContentArea)
+}
